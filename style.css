@@ -86,7 +86,7 @@ body{
 /*hOME SECTION STYLING*/
 .home {
     display: flex;
-    background:url("https://unsplash.com/photos/ilVYjf0J378") no-repeat center;
+    background:url("./images/B1.jpg") no-repeat center;
     height: 100vh;
     color: azure;
     min-height: 500px; 
