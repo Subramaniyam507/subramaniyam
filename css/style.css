@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Titillium+Web:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-weight: bold;
+}
+/* NAV BAR STyling*/
+.navbar{
+   position: fixed; 
+   width: 100% ;
+   z-index: 999;
+   font-family: 'Titillium Web', sans-serif;
+   padding:30px 0;
+   transition:all 0.3s ease;
+}
+.navbar.sticky{
+    padding:15px 0;
+   background-color:#F0A500;
+
+}
+
+.max-width{
+   max-width: 1300px; 
+   padding: 0 80px;
+   margin:auto;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+.navbar .logo a{
+   color: azure; 
+   font-size: 35px;
+   font-weight: 600;
+   text-decoration: none;
+}
+.navbar .logo a span{
+    color:#F0A500;
+    transition:all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color:black;
+    
+}
+
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+
+}
+.navbar .menu li a{
+    display:block;
+    color:azure;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition:color 0.3s;
+    text-decoration: none;
+}
+.navbar .menu li a:hover{
+     cOlOr: #F0A500;
+     border-bottom: solid #F0A500 3.6px ;
+}
+.navbar.sticky .menu li a:hover{
+    color:black;
+    border-bottom: solid black 3.6px;
+}
+.menu-button{
+    color:azure; 
+    font-size:23px;
+    cursor: pointer;
+    display:none;
+}
+
+
+/*hOME SECTION STYLING*/
+.home {
+    display: flex;
+    background:url("/images/B1.jpg") no-repeat center;
+    height: 100vh;
+    color: azure;
+    min-height: 500px; 
+   
+
+}
+.home.max-width{
+    margin:auto 0 auto 40px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 65px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+   
+ color:#F0A500;
+    font-weight: 500;
+}
+
+.home .home-content a{
+    display:inline-block;
+    background-color:#F0A500 ;
+    color:black;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 36px;
+    margin-top: 20px;
+   border-radius: 6px;
+   border: 2px solid #F0A500;
+   transition: all 0.3s ease; 
+  text-decoration:none;
+  font-family: 'Comfortaa', cursive;
+}
+.home .home-content a:hover{
+    color:#F0A500;
+    background: none;
+}
+section{
+    padding: 100px 0;
+}
+
+.about, .skills, .contact, footer{
+    font-family: 'Comfortaa', cursive;
+    
+
+}
+
+.about .about-content,
+.skills .skills-content,
+.contact .contact-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size:40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Titillium Web', sans-serif;  
+}
+
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;;
+    width: 180px;
+    height: 3px;
+    background-color:black;
+    transform: translateX(-50%);
+ 
+}
+section .title::after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color:#F0A500 ;
+    padding:5px;
+    background-color:white;
+    transform: translateX(-50%);
+}
+
+
+.about .title::after{
+    content: "Who Am I?";
+}
+
+.about .about-content .left{
+   width: 45% ;
+}
+.about .about-content .left img{
+    height:400px;
+    width:400px;
+    object-fit:cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right{
+    width: 55% ;
+ }
+ .about .about-content .right .text{
+     font-size: 25px;
+     font-weight: 600;
+     margin-bottom: 10px;
+ }
+ .about .about-content .right .text span{
+    color:#F0A500 ;
+ }
+ .about .about-content .right p{
+     text-align: justify;
+   
+ }
+
+ .about .about-content .right a{
+    display:inline-block;
+    background-color:#F0A500 ;
+    color:black;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1px 30px;
+    margin-top: 20px;
+   border-radius: 6px;
+   border: 2px solid #F0A500;
+   transition: all 0.3s ease; 
+  text-decoration:none;
+  font-family: 'Titillium Web', sans-serif;
+  
+}
+.about .about-content .right a:hover{
+    color: black;
+    background:none;
+}
+
+.skills{
+    background-color:black;
+    color:aliceblue;
+}
+
+.skills .title::before{
+    background:white;
+}
+
+.skills .title::after{
+    content:"What I Know?";
+    background:black;
+}
+
+.skills .skills-content .column,
+.contact .contact-content .column{
+    width:100%;
+    margin-bottom:35px;
+}
+.skills .skills-content .left .text{
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom:10px;
+}
+.skills .skills-content .left p {
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display:inline-block;
+    background-color:#F0A500 ;
+    color:black;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    margin-top: 20px;
+   border-radius: 6px;
+   border: 2px solid #F0A500;
+   transition: all 0.3s ease; 
+  text-decoration:none;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.skills .skills-content .left a:hover{
+    color:#F0A500;
+    background:none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 5px;
+
+}
+
+.skills .skills-content .right .info{ 
+    display:flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span{
+    font-weight: 600;
+    font-size: 14px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width:100%;
+    background:lightgrey;
+    position:relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";  
+    position: absolute;
+    height:100%;
+   
+    left: 0;
+    top: 0;
+    background: #F0A500;  
+}
+.skills-content .right .java::before{
+    width: 80%;
+}
+
+.skills-content .right .jdbc::before{
+    width: 80%;
+}
+.skills-content .right .mySQL::before{
+    width: 70%;
+}
+.skills-content .right .hTML::before{
+    width: 90%;
+}
+.skills-content .right .cSS::before{
+    width: 40%;
+}
+.skills-content .right .javaScript::before{
+    width: 40%;
+}
+.skills-content .right .bootstrap::before{
+    width: 40%;
+}
+.skills-content .right .python::before{
+    width: 70%;
+}
+.skills-content .right .abap::before{
+    width: 75%;
+}
+
+
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .left .text{
+    font-size: 20px ;
+    font-weight: 900;
+    margin-bottom:10px;
+}
+.contact .contact-content .left p{
+    text-align:justify;
+    
+
+}
+
+.contact .contact-content .left .icon{
+   margin :10px 0;
+
+}
+.contact .contact-content .row{
+    display: flex;
+     height: 65px;
+     align-items: center;
+
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+   
+}
+.contact .contact-content .row i{
+   font-size:25px;
+   color:#F0A500 ;
+}
+
+.contact .contact-content .info .head {
+    font-weight: 900 ;
+}
+
+.contact .right form .fields{
+    display:flex;
+}
+
+
+.contact .right form .field,
+.contact .right form .fields .field{
+   height: 45px;
+   width:100%;
+   margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width:100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius:6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+.contact .right form .textarea textarea{
+    padding-top:10px;
+    resize: none;
+}
+.contact .right form .button{
+     height: 47px;
+     width:170px;
+}
+.contact .right form .button button {
+    width:100%;
+    height:100%;
+    border: 2px solid #F0A500 ;
+    background: #F0A500;
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color:#F0A500;
+    background: none;
+
+}
+.contact .title::after{
+    content: "Get In Touch!"
+}
+ footer{
+     background:black;
+     padding: 20px 23px;
+     color:white;
+     text-align: center;
+ }
+ footer span a{
+    color:#F0A500;
+    text-decoration: none;
+ }
+
+footer span a:hover{
+    text-decoration: underline;
+
+}
+@media(max-width:1300px){
+    .home.max-width{
+        margin-left: 0px;
+    }
+}
+@media(max-width:1104px){
+    .about .about-content .left img{
+        height:350px;
+        width:350px;
+       
+       
+    }
+  
+}
+@media(max-width:991px){
+     .max-width{
+        padding: 0 50px;
+    }
+}
+
+
+@media(max-width:947px){
+
+    .max-width{
+         
+       padding: 0 50px;
+    
+     } 
+     .menu-button{
+        display:block;
+        z-index:999;
+    }
+    .menu-button i.active:before{
+        content: "\f00d";
+    }
+     .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left:-100%;
+        top:0;
+         background-color: black;
+         text-align: center;
+         padding-top: 80px ;
+         transition: all 0.3s ease;
+     }
+
+     .navbar .menu.active{
+         left: 0;
+        }
+     .navbar .menu li{
+      display: block;
+     }
+     .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+     }
+     .home .home-content .text-2{
+        font-size: 60px;
+       ;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+       
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 800px; 
+      
+     }
+    .about .about-content .column {
+          width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin:0 auto 60px;
+       
+    }
+    
+    .about .about-content .column .right{
+         flex:100%; 
+            
+    }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+
+  
+}
+
+@media(max-width:690px){
+     .max-width{
+         padding: 0 23px;
+     }
+    .home .home-content .text-2{
+        font-size: 60px;
+       ;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+       
+    } 
+    .home .home-content a{
+        font-size: 20px;
+     
+    }
+    .skills .skills-content .column{
+        width: 100%;
+    }
+}
+
+@media(max-width:500px){
+
+    .home .home-content .text-2{
+        font-size: 50px;
+       ;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+       
+    } 
+}
+
+
